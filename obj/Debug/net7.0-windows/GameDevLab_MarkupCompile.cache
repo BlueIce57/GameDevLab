@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-P:\GameDevLab\obj\Debug\net7.0-windows\
+A:\Code\App\GameDevLab\obj\Debug\net7.0-windows\
 GameDevLab
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-P:\GameDevLab\App.xaml
+A:\Code\App\GameDevLab\App.xaml
 31539960725
 
-7-2094577106
-2111589883199
+9-1205439118
+212880328912
 MainWindow.xaml;NewProjectWindow.xaml;WorkWindow.xaml;
 
 False

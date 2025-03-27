@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dv56BHznV9c=",
+  "dgSpecHash": "4ffdo/8kRVc=",
   "success": true,
-  "projectFilePath": "P:\\GameDevLab\\GameDevLab.csproj",
+  "projectFilePath": "A:\\Code\\App\\GameDevLab\\GameDevLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexis\\.nuget\\packages\\microsoft.data.sqlite\\7.0.0\\microsoft.data.sqlite.7.0.0.nupkg.sha512",
     "C:\\Users\\Alexis\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",

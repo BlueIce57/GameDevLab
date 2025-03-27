@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using GameDevLab.Tools;
+using System;
+using System.IO;
+using System.Windows;
 using System.Windows.Forms; // Correct namespace for FolderBrowserDialog
 
 namespace GameDevLab
@@ -29,11 +32,28 @@ namespace GameDevLab
                 return;
             }
 
-            // Vous pouvez ajouter la logique pour sauvegarder le projet ici
+            var projectData = new { Name = ProjectName, Description = ProjectDescription };
 
-            System.Windows.Forms.MessageBox.Show($"Projet '{ProjectName}' créé avec succès !", "Succès");
-            DialogResult = true;
-            Close();
+            // Construct the path for the .gdlf file
+            string gdlfFilePath = System.IO.Path.Combine(ProjectPath, ProjectName + ".gdlf");
+            DataController.SaveProjectToGdlf(projectData, gdlfFilePath);
+
+            // Close the NewProjectWindow
+            this.Close();
+
+            // Open the WorkWindow
+            WorkWindow workWindow = new WorkWindow(ProjectName);
+            workWindow.Show();
+
+            // Close the MainWindow
+            foreach (Window window in System.Windows.Application.Current.Windows)
+            {
+                if (window is MainWindow mainWindow)
+                {
+                    mainWindow.Close();
+                    break;
+                }
+            }
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

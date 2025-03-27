@@ -77,7 +77,7 @@ namespace GameDevLab {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameDevLab;V1.0.0.0;component/newprojectwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameDevLab;component/newprojectwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NewProjectWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

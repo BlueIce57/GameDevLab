@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\GameDevLab\\GameDevLab.csproj": {}
+    "A:\\Code\\App\\GameDevLab\\GameDevLab.csproj": {}
   },
   "projects": {
-    "P:\\GameDevLab\\GameDevLab.csproj": {
+    "A:\\Code\\App\\GameDevLab\\GameDevLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\GameDevLab\\GameDevLab.csproj",
+        "projectUniqueName": "A:\\Code\\App\\GameDevLab\\GameDevLab.csproj",
         "projectName": "GameDevLab",
-        "projectPath": "P:\\GameDevLab\\GameDevLab.csproj",
+        "projectPath": "A:\\Code\\App\\GameDevLab\\GameDevLab.csproj",
         "packagesPath": "C:\\Users\\Alexis\\.nuget\\packages\\",
-        "outputPath": "P:\\GameDevLab\\obj\\",
+        "outputPath": "A:\\Code\\App\\GameDevLab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

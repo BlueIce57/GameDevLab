@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using GameDevLab.Tools;
+using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Windows;
 
 namespace GameDevLab
@@ -40,6 +42,27 @@ namespace GameDevLab
             else
             {
                 System.Windows.Forms.MessageBox.Show("Veuillez sélectionner un projet à ouvrir.");
+            }
+        }
+
+        private void CompressTest_Click(object sender, RoutedEventArgs e)
+        {
+            var projectData = new { Name = "MonProjet", Date = DateTime.Now, Data = "Données du projet" };
+            DataController.SaveProjectToGdlf(projectData, "MonProjet.gdlf");
+
+        }
+
+        private void DecompressTest_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var projectData = DataController.LoadProjectFromGdlf<dynamic>("MonProjet.gdlf");
+                Console.WriteLine(projectData.Name);
+                System.Windows.Forms.MessageBox.Show($"Projet décompressé: {projectData.Name} Data : {projectData.Data}");
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show($"Erreur lors de la décompression: {ex.Message}");
             }
         }
     }
